@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargo Website</title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- OWL CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+
+    <!-- FONT AWESOM -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="upper">
+            <div class="left">
+                <a href="#">
+                    <h1>B<span>Sheikh</span></h1>
+                </a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>services</li>
+                    <li>news and media</li>
+                    <li>careers</li>
+                </ul>
+                <button>Connect WIth US</button>
+            </div>
+            <i class="fa-solid fa-circle-xmark" onclick="myClose()" id="closeNav" ></i>
+            <i class="fa-solid fa-bars" onclick="myBars()" id="openNav"></i>
+        </div>
+        <div class="bottom" id="resNav">
+            <div class="left">
+                <nav>
+                    <ul>
+                        <li>home</li>
+                        <li>pages</li>
+                        <li>portfolio</li>
+                        <li>blog</li>
+                        <li>shop</li>
+                        <li>contact</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                <div id="myOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="overlay-content">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER -->
+
+    <!-- HOME -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <section class="home">
+                <div class="content">
+                    <div class="col-lg-12">
+                        <h1 class="banner-heading">
+                            <span>flexible</span> logistics<br> & <span>cargo</span> for <span>bussiness</span>
+                        </h1>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="banner-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel culpa
+                            consectetur deserunt dolorum
+                            quibusdam distinctio magni quas eveniet ipsam modi obcaecati reprehenderit porro nemo dolor
+                            dicta,
+                            possimus totam cumque cupiditate!</p>
+                    </div>
+                    <div class="col-12 home-btn">
+                        <button>explore more</button>
+                        <button>speak with experts</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- HOME -->
+
+        <!-- ABOUT -->
+
+        <div class="row">
+            <section class="about">
+                <div class="content d-lg-flex d-block">
+                    <div class="col-lg-6 col-12 left">
+                        <h1>transmax logistics around <span>the world</span></h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel culpa consectetur deserunt
+                            dolorum
+                            quibusdam distinctio magni quas eveniet ipsam modi obcaecati reprehenderit porro nemo dolor
+                            dicta, possimus totam cumque cupiditate!</p>
+                        <br>
+                        <p>it is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking as its layout the point of using LOREM IPSUM</p>
+                        <button>more about us</button>
+                    </div>
+                    <div class="col-lg-6 col-8 right">
+                        <img src="images/about.jpg" alt="" class="img-1 img-fluid">
+                        <div class="clients-wrap">
+                            <div class="clients">
+                                <h3>15,350+</h3>
+                                <h4>clients worldwide</h4>
+                            </div>
+                        </div>
+                        <img src="images/aboutmain.jpg" alt="" class="img-2 img-fluid">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ABOUT -->
+
+        <!-- TRANSPORT -->
+
+        <div class="row">
+            <section class="services">
+                <div class="content">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-10 col-12">
+                                <h1 class="services-heading">explore our <span>service</span></h1>
+                                <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                                    impedit at aut beatae aperiam!
+                                    Soluta, inventore! Quasi eius non rem!</p>
+                            </div>
+                            <div class="col-md-2 col-12">
+                                <button>explore now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-4 col-md-5 col-9">
+                                <div class="item item-1">
+                                    <div class="carousel-content">
+                                        <i class="fa-solid fa-truck"></i>
+                                        <h1 class="heading">land transport</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, explicabo?
+                                        </p>
+                                        <ul>
+                                            <li><i class="fa-solid fa-circle-dot"></i> Lorem, ipsum.</li>
+                                            <li><i class="fa-solid fa-circle-dot"></i> Lorem, ipsum.</li>
+                                            <li><i class="fa-solid fa-circle-dot"></i> Lorem, ipsum.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-5 col-9">
+                                <div class="item item-2">
+                                    <div class="carousel-content">
+                                        <i class="fa-solid fa-plane-departure"></i>
+                                        <h1 class="heading">air transport</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, explicabo?
+                                        </p>
+                                        <ul>
+                                            <li><i class="fa-solid fa-circle-dot"></i> Lorem, ipsum.</li>
+                                            <li><i class="fa-solid fa-circle-dot"></i> Lorem, ipsum.</li>
+                                            <li><i class="fa-solid fa-circle-dot"></i> Lorem, ipsum.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-5 col-9">
+                                <div class="item item-3">
+                                    <div class="carousel-content">
+                                        <i class="fa-solid fa-ship"></i>
+                                        <h1 class="heading">ocean freight</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, explicabo?
+                                        </p>
+                                        <ul>
+                                            <li><i class="fa-solid fa-circle-dot"></i> Lorem, ipsum.</li>
+                                            <li><i class="fa-solid fa-circle-dot"></i> Lorem, ipsum.</li>
+                                            <li><i class="fa-solid fa-circle-dot"></i> Lorem, ipsum.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
+        <!-- TRANSPORT -->
+
+        <!-- SERVICES -->
+
+        <div class="row d-flex">
+            <section class="subservices">
+                <div class="content">
+                    <div class="card col-lg-3 col-md-4 col-9">
+                        <h6>01</h6>
+                        <h2>quality management system</h2>
+                        <div class="read-btn">
+                            <button>></button>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-9">
+                        <h6>02</h6>
+                        <h2>E-Commerce logistics solutions</h2>
+                        <div class="read-btn">
+                            <button>></button>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-9">
+                        <h6>03</h6>
+                        <h2>service & aftermarket logistics</h2>
+                        <div class="read-btn">
+                            <button>></button>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-9">
+                        <h6>04</h6>
+                        <h2>industry-specific competence</h2>
+                        <div class="read-btn">
+                            <button>></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SERVICES -->
+
+        <!-- INDUSTRY -->
+
+        <div class="row">
+            <section class="industry">
+                <div class="content d-lg-flex">
+                    <div class="col-lg-6">
+                        <h1 class="ind-heading">our industry - explict <span>competence</span></h1>
+                        <p class="ind-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto veritatis doloribus optio eos
+                            perferendis recusandae aliquam, accusamus reiciendis nulla.
+                        </p>
+                        <div class="list">
+                            <ul>
+                                <li>aerospace & defence</li>
+                                <li>automobile</li>
+                                <li>cloud computing</li>
+                                <li>fashion & retail</li>
+                                <li>health & care</li>
+                                <li>machine parts</li>
+                            </ul>
+                            <ul>
+                                <li>electronics industry</li>
+                                <li>industrial manufacturing</li>
+                                <li>semicon and solar</li>
+                                <li>oil & gas cargo</li>
+                                <li>energy & chemical</li>
+                                <li>engineering</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="images/image.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- INDUSTRY -->
+
+        <!-- GOALS -->
+
+        <div class="row">
+            <section class="goals">
+                <div class="content">
+                    <div class="col-12">
+                        <h1 class="goals-h">our goals in <span>numbers</span></h1>
+                        <p class="goals-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione magnam
+                            consectetur praesentium recusandae veniam qui ut doloribus unde non at.</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row goals-wrap">
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <div class="card">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <h4>300+</h4>
+                                    <h3>warehouses managed</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aut.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <div class="card">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <h4>120+</h4>
+                                    <h3>supply engineers</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aut.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <div class="card">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <h4>90+</h4>
+                                    <h3>countries converted</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aut.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <div class="card">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <h4>600+</h4>
+                                    <h3>companies we help</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aut.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- GOALS -->
+
+        <!-- TESTINOMIALS -->
+
+        <div class="row">
+            <section class="testinomials">
+                <div class="content d-lg-flex">
+                    <div class="details">
+                        <h1>people say about our <span>company</span></h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate fugit mollitia doloremque
+                            voluptatibus consequuntur quidem ipsam reprehenderit at molestias!</p>
+                        <button>all testinomials</button>
+                    </div>
+                    <div class="card-wrap d-md-flex">
+                        <div class="card">
+                            <h3>"great work"</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, consequatur quis? Saepe
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="person-details">
+                                <img src="images/person.jpg" alt="">
+                                <div class="name">
+                                    <h3>anna ingosto</h3>
+                                    <h4>clients of company</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>"great work"</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, consequatur quis? Saepe
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="person-details">
+                                <img src="images/person.jpg" alt="">
+                                <div class="name">
+                                    <h3>anna ingosto</h3>
+                                    <h4>clients of company</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- TESTINOMIALS -->
+
+        <!-- CONNECT -->
+
+        <div class="row">
+            <section class="connect">
+                <div class="content">
+                    <div class="col-lg-8 col-sm-12 m-auto">
+                        <h1>
+                            world's leading contract logistics provider
+                        </h1>
+                    </div>
+                    <div class="col-12">
+                        <button>
+                            connect with us
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- CONNECT -->
+
+        <!-- FOOTER -->
+
+        <!-- Footer -->
+        <footer class="page-footer font-small blue pt-4">
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mt-md-0 mt-3">
+
+                        <!-- Content -->
+                        <h4 class="text-uppercase">BSheikh</h4>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+
+                        
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">ABOUT</h5>
+
+                        <ul class="list-unstyled f-list">
+                            <li>
+                                <a href="#!">Lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#!">Lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#!">Lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#!">Lorem ipsum</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase f-list">CONNECT</h5>
+
+                        <ul class="list-unstyled f-list">
+                            <li>
+                                <a href="#!">Lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#!">Lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#!">Lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#!">Lorem ipsum</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Quick Links</h5>
+
+                        <ul class="list-unstyled f-list">
+                            <li>
+                                <a href="#!">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#!">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="#!">CONNECT</a>
+                            </li>
+                            <li>
+                                <a href="#!">WORK WITH US</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="/"> Bilal Sheikh</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+        <!-- CONTANIER_FLUID -->
+    </div>
+
+    <!-- JAVASCRIPT LINKS -->
+
+    <!-- JQUERY -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- OWL JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- CUSTOM JS -->
+
+    <script type="text/javascript">
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }`
+        
+            function myBars() {
+            document.getElementById("resNav").style.display = "block";
+            document.getElementById("openNav").style.display = "none";
+            document.getElementById("closeNav").style.display = "block";
+        }
+
+        function myClose() {
+            document.getElementById("resNav").style.display = "none";
+            document.getElementById("openNav").style.display = "block";
+            document.getElementById("closeNav").style.display = "none";
+        }
+
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1200: {
+                        items: 3
+                    }
+                }
+            })
+        })
+    </script>
+
+    <!-- BOOTSTRAP JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
